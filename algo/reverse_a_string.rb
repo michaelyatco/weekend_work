@@ -3,7 +3,9 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-
+  half_length = string.length / 2
+  half_length.times {|i| string[i], string[-i-1] = string[-i-1], string[i] }
+  string
 end
 
 # Driver code - don't touch anything below this line.
